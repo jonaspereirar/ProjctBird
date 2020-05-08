@@ -1,0 +1,88 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  text-align: center;
+}
+#nota1 {
+  animation: notas 3s infinite linear;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+#nota2 {
+  animation: notas 2s infinite linear;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+#nota3 {
+  animation: notasZ 1s ease-in-out infinite alternate;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+
+#nota4 {
+  animation: notas 5s infinite linear;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+#nota5 {
+  animation: notas 1s infinite linear;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+#nota6 {
+  animation: body 2s ease-in-out infinite alternate;
+  transform-origin: bottom;
+}
+
+#body {
+  animation: body 1s ease-in-out infinite alternate;
+  transform-origin: bottom;
+}
+
+#hair {
+  animation: hair 1s ease-in-out infinite alternate;
+  transform-origin: top;
+  transform-box: fill-box;
+}
+
+@keyframes notas{
+  from{
+      transform: rotateZ(0deg);
+  }
+  to{
+    transform: rotateZ(360deg);
+  }
+}
+
+@keyframes notasZ{
+  from{
+    transform: translate(0%) rotateZ(0deg);
+  }
+  to{
+    transform: translate(40%) rotateZ(20deg);
+  }
+}
+
+@keyframes body{
+  from {
+    transform: rotateX(-20deg);
+  }to {
+    transform: rotateX(20deg);
+  }
+}
+
+@keyframes hair{
+  from {
+    transform: rotateX(-20deg);
+  }to {
+    transform: rotateX(20deg);
+  }
+}
